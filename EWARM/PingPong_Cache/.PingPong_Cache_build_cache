@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BuildDb>
+    <Tool>
+        <Name>linker</Name>
+        <Parent>
+            <Path>C:\Users\heuch\Desktop\ARM\STM32\Study\PingPong_Cache\EWARM\PingPong_Cache\Exe\PingPong_Cache.out</Path>
+            <Output>
+                <Path>C:\Users\heuch\Desktop\ARM\STM32\Study\PingPong_Cache\EWARM\PingPong_Cache\List\PingPong_Cache.map</Path>
+            </Output>
+        </Parent>
+    </Tool>
+</BuildDb>
