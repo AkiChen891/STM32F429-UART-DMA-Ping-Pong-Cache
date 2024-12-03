@@ -170,20 +170,11 @@ void HAL_UARTEx_RxEventCallback(UART_HandleTypeDef *huart, uint16_t Size)
   uint8_t txbuf[] = "rx done\n";
   HAL_UART_Transmit_IT(&huart1, txbuf, sizeof(txbuf));
 
-  static uint8_t rx_buf_head = 0; //待处理数据初始位置
+  static uint8_t rx_buf_head = 0;
   static uint8_t rx_size; //待处理数据长度
+ 
+  rx_size = Size - rx_buf_head;
 
-  if (Size >= rx_buf_head)
-  /*环形缓冲区未溢出*/
-  {
-    rx_size = Size - rx_buf_head;
-  }
-  else
-  /*环形缓冲区溢出*/
-  {
-    rx_size = RxBufSize - rx_buf_head + Size;
-  }
-  
   for (uint16_t i = 0; i < rx_size; i++)
   {
       RxFinal[final_index++] = RxBuf[(rx_buf_head + i) % RxBufSize]; // 环形缓冲处理

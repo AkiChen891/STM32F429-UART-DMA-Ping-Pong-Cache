@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
 <settings>
     <StLinkDriver>
+        <stlinkserialNo>1D0035002031343039303142</stlinkserialNo>
+        <stlinkfoundProbes />
         <LeaveTargetRunning>_ 0</LeaveTargetRunning>
         <CStepIntDis>_ 0</CStepIntDis>
         <stlinkResetStyle>0</stlinkResetStyle>
         <stlinkResetStrategy>2</stlinkResetStrategy>
-        <stlinkserialNo>1D0035002031343039303142</stlinkserialNo>
-        <stlinkfoundProbes />
     </StLinkDriver>
     <PlDriver>
-        <MemConfigValue>d:\IAR Systems\Embedded Workbench 9.2\arm\config\debugger\ST\STM32F429IG.ddf</MemConfigValue>
         <FirstRun>0</FirstRun>
+        <MemConfigValue>D:\IAR Systems\Embedded Workbench 9.2\arm\config\debugger\ST\STM32F429IG.ddf</MemConfigValue>
     </PlDriver>
     <Exceptions>
         <StopOnUncaught>_ 0</StopOnUncaught>
